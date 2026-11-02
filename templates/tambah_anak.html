@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Tambah Anak{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+<div class="col-lg-7">
+<div class="card shadow-sm">
+<div class="card-body p-4">
+<h1 class="h4 mb-4">Tambah Anak</h1>
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Nama anak *</label>
+        <input name="name" class="form-control" value="{{ request.form.get('name', '') }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Jenis kelamin *</label>
+        <select name="gender" class="form-select" required>
+            <option value="">Pilih</option>
+            <option value="L" {% if request.form.get('gender') == 'L' %}selected{% endif %}>Laki-laki</option>
+            <option value="P" {% if request.form.get('gender') == 'P' %}selected{% endif %}>Perempuan</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tanggal lahir *</label>
+        <input type="date" name="birth_date" class="form-control"
+               value="{{ request.form.get('birth_date', '') }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Nama orang tua</label>
+        <input name="parent_name" class="form-control"
+               value="{{ request.form.get('parent_name', '') }}">
+    </div>
+
+    <div class="mb-4">
+        <label class="form-label">Catatan</label>
+        <textarea name="notes" class="form-control" rows="3">{{ request.form.get('notes', '') }}</textarea>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Batal</a>
+    <button class="btn btn-primary">Simpan Anak</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Edit Anak - {{ child["name"] }}{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+<div class="col-lg-7">
+<div class="card shadow-sm">
+<div class="card-body p-4">
+<h1 class="h4 mb-1">Edit Data Anak</h1>
+<p class="text-muted mb-4">{{ child["name"] }}</p>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Nama anak *</label>
+        <input name="name" class="form-control"
+               value="{{ request.form.get('name', child['name']) }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Jenis kelamin *</label>
+        {% set current_gender = request.form.get('gender', child['gender']) %}
+        <select name="gender" class="form-select" required>
+            <option value="L" {% if current_gender == 'L' %}selected{% endif %}>Laki-laki</option>
+            <option value="P" {% if current_gender == 'P' %}selected{% endif %}>Perempuan</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tanggal lahir *</label>
+        <input type="date" name="birth_date" class="form-control"
+               value="{{ request.form.get('birth_date', child['birth_date']) }}" required>
+        <div class="form-text">
+            Jika tanggal lahir diubah, usia (bulan) pada seluruh riwayat pengukuran akan dihitung ulang.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Nama orang tua</label>
+        <input name="parent_name" class="form-control"
+               value="{{ request.form.get('parent_name', child['parent_name'] or '') }}">
+    </div>
+
+    <div class="mb-4">
+        <label class="form-label">Catatan</label>
+        <textarea name="notes" class="form-control" rows="3">{{ request.form.get('notes', child['notes'] or '') }}</textarea>
+    </div>
+
+    <a href="{{ url_for('detail_anak', child_id=child['id']) }}" class="btn btn-secondary">Batal</a>
+    <button class="btn btn-primary">Simpan Perubahan</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

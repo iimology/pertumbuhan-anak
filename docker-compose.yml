@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: pertumbuhan-anak
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - growth_data:/app/data
+
+volumes:
+  growth_data:

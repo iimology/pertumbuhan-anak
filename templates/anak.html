@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% block title %}{{ child["name"] }} - Pertumbuhan Anak{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+    <div>
+        <h1 class="h3 mb-1">{{ child["name"] }}</h1>
+        <p class="text-muted mb-0">
+            {{ "Laki-laki" if child["gender"] == "L" else "Perempuan" }} ·
+            Lahir {{ child["birth_date"] }} ·
+            Usia saat ini {{ current_age }} bulan
+        </p>
+    </div>
+
+    <div class="d-flex gap-2">
+        <a href="{{ url_for('edit_anak', child_id=child['id']) }}" class="btn btn-warning">
+            Edit Anak
+        </a>
+        <a href="{{ url_for('tambah_pengukuran', child_id=child['id']) }}" class="btn btn-primary">
+            + Pengukuran
+        </a>
+    </div>
+</div>
+
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+    <h2 class="h5">Biodata</h2>
+    <p class="mb-1"><strong>Nama orang tua:</strong> {{ child["parent_name"] or "-" }}</p>
+    <p class="mb-0"><strong>Catatan:</strong> {{ child["notes"] or "-" }}</p>
+</div>
+</div>
+
+{% if measurements %}
+<div class="row g-4 mb-4">
+    <div class="col-12">
+        <div class="alert alert-info small mb-0">
+            <strong>Kurva WHO:</strong> garis −2 SD, median (0 SD), dan +2 SD ditampilkan sesuai jenis kelamin.
+            Usia 0–60 bulan menggunakan WHO Child Growth Standards; mulai 61 bulan kurva tinggi menggunakan WHO Growth Reference 2007 sampai 228 bulan (19 tahun).
+            Kurva berat badan menggunakan referensi WHO sampai 120 bulan (10 tahun) dan <strong>tidak diteruskan setelah 10 tahun</strong>, sesuai batas indikator WHO.
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="h5">Kurva Tinggi / Panjang Badan</h2>
+                <p class="text-muted small">Data anak dibandingkan dengan referensi WHO.</p>
+                <div class="chart-container"><canvas id="heightChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="h5">Kurva Berat Badan</h2>
+                <p class="text-muted small">Data anak dibandingkan dengan referensi WHO sampai usia 10 tahun.</p>
+                <div class="chart-container"><canvas id="weightChart"></canvas></div>
+                <div id="weightNotice" class="small text-muted mt-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="card shadow-sm">
+<div class="card-body">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="h5 mb-0">Riwayat Pengukuran</h2>
+        <a href="{{ url_for('tambah_pengukuran', child_id=child['id']) }}" class="btn btn-sm btn-primary">
+            + Tambah
+        </a>
+    </div>
+
+    {% if measurements %}
+    <div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Usia</th>
+                <th>Tinggi</th>
+                <th>Berat</th>
+                <th>Catatan</th>
+                <th class="text-end">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for m in measurements %}
+            <tr>
+                <td>{{ m["measurement_date"] }}</td>
+                <td>{{ m["age_months"] }} bulan</td>
+                <td>{{ m["height"] }} cm</td>
+                <td>{{ m["weight"] }} kg</td>
+                <td>{{ m["notes"] or "-" }}</td>
+                <td class="text-end">
+                    <div class="d-flex justify-content-end gap-1">
+                        <a href="{{ url_for('edit_pengukuran', child_id=child['id'], measurement_id=m['id']) }}"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+                        <form method="post"
+                              action="{{ url_for('hapus_pengukuran', child_id=child['id'], measurement_id=m['id']) }}"
+                              onsubmit="return confirm('Hapus pengukuran ini? Data yang dihapus tidak dapat dikembalikan.')">
+                            <button class="btn btn-sm btn-outline-danger">Hapus</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    {% else %}
+        <div class="alert alert-info mb-0">Belum ada pengukuran untuk anak ini.</div>
+    {% endif %}
+</div>
+</div>
+
+{% if measurements %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const measurements = {{ measurements | map(attribute='age_months') | list | tojson }};
+const heights = {{ measurements | map(attribute='height') | list | tojson }};
+const weights = {{ measurements | map(attribute='weight') | list | tojson }};
+const dates = {{ measurements | map(attribute='measurement_date') | list | tojson }};
+const sex = {{ ("boys" if child["gender"] == "L" else "girls") | tojson }};
+
+async function loadWHO() {
+    const response = await fetch("{{ url_for('static', filename='data/who_growth_standards.json') }}");
+    return await response.json();
+}
+
+function makeReferenceDataset(label, rows, field, dash=false) {
+    return {
+        label,
+        data: rows.map(r => ({x: r.age, y: r[field]})),
+        parsing: false,
+        pointRadius: 0,
+        borderDash: dash ? [6, 5] : [],
+        tension: 0.25,
+        fill: false
+    };
+}
+
+function makeChildDataset(label, values) {
+    return {
+        label,
+        data: measurements.map((age, i) => ({x: age, y: Number(values[i])})),
+        parsing: false,
+        pointRadius: 5,
+        tension: 0.25,
+        fill: false
+    };
+}
+
+function getXAxisMax(maxAge) {
+    if (maxAge <= 60) return 60;
+    if (maxAge <= 120) return 120;
+    if (maxAge <= 180) return 180;
+    return 228;
+}
+
+function chartOptions(yLabel, maxAge, refMaxAge) {
+    return {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'nearest', intersect: false },
+        scales: {
+            x: {
+                type: 'linear',
+                title: { display: true, text: 'Usia (bulan)' },
+                min: 0,
+                max: getXAxisMax(maxAge),
+                ticks: { stepSize: maxAge <= 60 ? 12 : 12 }
+            },
+            y: {
+                title: { display: true, text: yLabel },
+                beginAtZero: false
+            }
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    afterBody: function(items) {
+                        const item = items[0];
+                        if (item && item.datasetIndex === 3) {
+                            return 'Tanggal: ' + dates[item.dataIndex];
+                        }
+                        return '';
+                    }
+                }
+            }
+        }
+    };
+}
+
+function rowsUpTo(rows, maxAge) {
+    return rows.filter(r => Number(r.age) <= maxAge);
+}
+
+loadWHO().then(who => {
+    const maxChildAge = Math.max(...measurements, 0);
+    const hRows = who.height[sex];
+    const wRows = who.weight[sex];
+    const heightRefMax = 228;
+    const weightRefMax = 120;
+
+    new Chart(document.getElementById('heightChart'), {
+        type: 'line',
+        data: {
+            datasets: [
+                makeReferenceDataset('WHO −2 SD', hRows, 'minus2', true),
+                makeReferenceDataset('WHO Median', hRows, 'median', false),
+                makeReferenceDataset('WHO +2 SD', hRows, 'plus2', true),
+                makeChildDataset('{{ child["name"] }}', heights)
+            ]
+        },
+        options: chartOptions('Tinggi / panjang (cm)', maxChildAge, heightRefMax)
+    });
+
+    new Chart(document.getElementById('weightChart'), {
+        type: 'line',
+        data: {
+            datasets: [
+                makeReferenceDataset('WHO −2 SD', wRows, 'minus2', true),
+                makeReferenceDataset('WHO Median', wRows, 'median', false),
+                makeReferenceDataset('WHO +2 SD', wRows, 'plus2', true),
+                makeChildDataset('{{ child["name"] }}', weights)
+            ]
+        },
+        options: chartOptions('Berat (kg)', Math.min(maxChildAge, 120), weightRefMax)
+    });
+
+    if (maxChildAge > 120) {
+        document.getElementById('weightNotice').textContent =
+            'Catatan WHO: referensi berat-menurut-umur berhenti pada 120 bulan (10 tahun). Data berat anak setelah usia tersebut tetap ditampilkan, tetapi tidak dibandingkan dengan kurva WHO berat-menurut-umur.';
+    }
+});
+</script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,1731 @@
+{
+  "height": {
+    "boys": [
+      {
+        "age": 0,
+        "minus2": 46.1,
+        "median": 49.88,
+        "plus2": 53.67
+      },
+      {
+        "age": 1,
+        "minus2": 50.83,
+        "median": 54.72,
+        "plus2": 58.62
+      },
+      {
+        "age": 2,
+        "minus2": 54.42,
+        "median": 58.42,
+        "plus2": 62.43
+      },
+      {
+        "age": 3,
+        "minus2": 57.34,
+        "median": 61.43,
+        "plus2": 65.52
+      },
+      {
+        "age": 4,
+        "minus2": 59.72,
+        "median": 63.89,
+        "plus2": 68.05
+      },
+      {
+        "age": 5,
+        "minus2": 61.68,
+        "median": 65.9,
+        "plus2": 70.13
+      },
+      {
+        "age": 6,
+        "minus2": 63.34,
+        "median": 67.62,
+        "plus2": 71.9
+      },
+      {
+        "age": 7,
+        "minus2": 64.82,
+        "median": 69.16,
+        "plus2": 73.51
+      },
+      {
+        "age": 8,
+        "minus2": 66.19,
+        "median": 70.6,
+        "plus2": 75.01
+      },
+      {
+        "age": 9,
+        "minus2": 67.48,
+        "median": 71.97,
+        "plus2": 76.46
+      },
+      {
+        "age": 10,
+        "minus2": 68.71,
+        "median": 73.28,
+        "plus2": 77.85
+      },
+      {
+        "age": 11,
+        "minus2": 69.88,
+        "median": 74.54,
+        "plus2": 79.2
+      },
+      {
+        "age": 12,
+        "minus2": 71.0,
+        "median": 75.75,
+        "plus2": 80.5
+      },
+      {
+        "age": 13,
+        "minus2": 72.07,
+        "median": 76.92,
+        "plus2": 81.77
+      },
+      {
+        "age": 14,
+        "minus2": 73.1,
+        "median": 78.05,
+        "plus2": 83.0
+      },
+      {
+        "age": 15,
+        "minus2": 74.09,
+        "median": 79.15,
+        "plus2": 84.21
+      },
+      {
+        "age": 16,
+        "minus2": 75.04,
+        "median": 80.21,
+        "plus2": 85.38
+      },
+      {
+        "age": 17,
+        "minus2": 75.97,
+        "median": 81.25,
+        "plus2": 86.53
+      },
+      {
+        "age": 18,
+        "minus2": 76.86,
+        "median": 82.26,
+        "plus2": 87.65
+      },
+      {
+        "age": 19,
+        "minus2": 77.73,
+        "median": 83.24,
+        "plus2": 88.75
+      },
+      {
+        "age": 20,
+        "minus2": 78.57,
+        "median": 84.2,
+        "plus2": 89.83
+      },
+      {
+        "age": 21,
+        "minus2": 79.39,
+        "median": 85.13,
+        "plus2": 90.88
+      },
+      {
+        "age": 22,
+        "minus2": 80.18,
+        "median": 86.05,
+        "plus2": 91.92
+      },
+      {
+        "age": 23,
+        "minus2": 80.95,
+        "median": 86.94,
+        "plus2": 92.93
+      },
+      {
+        "age": 24,
+        "minus2": 81.7,
+        "median": 87.12,
+        "plus2": 93.2
+      },
+      {
+        "age": 25,
+        "minus2": 81.7,
+        "median": 87.97,
+        "plus2": 94.2
+      },
+      {
+        "age": 26,
+        "minus2": 82.5,
+        "median": 88.81,
+        "plus2": 95.2
+      },
+      {
+        "age": 27,
+        "minus2": 83.1,
+        "median": 89.62,
+        "plus2": 96.1
+      },
+      {
+        "age": 28,
+        "minus2": 83.8,
+        "median": 90.41,
+        "plus2": 97
+      },
+      {
+        "age": 29,
+        "minus2": 84.5,
+        "median": 91.18,
+        "plus2": 97.9
+      },
+      {
+        "age": 30,
+        "minus2": 85.1,
+        "median": 91.93,
+        "plus2": 98.7
+      },
+      {
+        "age": 31,
+        "minus2": 85.7,
+        "median": 92.66,
+        "plus2": 99.6
+      },
+      {
+        "age": 32,
+        "minus2": 86.4,
+        "median": 93.38,
+        "plus2": 100.4
+      },
+      {
+        "age": 33,
+        "minus2": 86.9,
+        "median": 94.07,
+        "plus2": 101.2
+      },
+      {
+        "age": 34,
+        "minus2": 87.5,
+        "median": 94.75,
+        "plus2": 102
+      },
+      {
+        "age": 35,
+        "minus2": 88.1,
+        "median": 95.42,
+        "plus2": 102.7
+      },
+      {
+        "age": 36,
+        "minus2": 88.7,
+        "median": 96.08,
+        "plus2": 103.5
+      },
+      {
+        "age": 37,
+        "minus2": 89.2,
+        "median": 96.73,
+        "plus2": 104.2
+      },
+      {
+        "age": 38,
+        "minus2": 89.8,
+        "median": 97.37,
+        "plus2": 105
+      },
+      {
+        "age": 39,
+        "minus2": 90.3,
+        "median": 98.01,
+        "plus2": 105.7
+      },
+      {
+        "age": 40,
+        "minus2": 90.9,
+        "median": 98.63,
+        "plus2": 106.4
+      },
+      {
+        "age": 41,
+        "minus2": 91.4,
+        "median": 99.25,
+        "plus2": 107.1
+      },
+      {
+        "age": 42,
+        "minus2": 91.9,
+        "median": 99.85,
+        "plus2": 107.8
+      },
+      {
+        "age": 43,
+        "minus2": 92.4,
+        "median": 100.45,
+        "plus2": 108.5
+      },
+      {
+        "age": 44,
+        "minus2": 93,
+        "median": 101.04,
+        "plus2": 109.1
+      },
+      {
+        "age": 45,
+        "minus2": 93.5,
+        "median": 101.62,
+        "plus2": 109.8
+      },
+      {
+        "age": 46,
+        "minus2": 94,
+        "median": 102.19,
+        "plus2": 110.4
+      },
+      {
+        "age": 47,
+        "minus2": 94.4,
+        "median": 102.76,
+        "plus2": 111.1
+      },
+      {
+        "age": 48,
+        "minus2": 94.9,
+        "median": 103.33,
+        "plus2": 111.7
+      },
+      {
+        "age": 49,
+        "minus2": 95.4,
+        "median": 103.89,
+        "plus2": 112.4
+      },
+      {
+        "age": 50,
+        "minus2": 95.9,
+        "median": 104.45,
+        "plus2": 113
+      },
+      {
+        "age": 51,
+        "minus2": 96.4,
+        "median": 105.0,
+        "plus2": 113.6
+      },
+      {
+        "age": 52,
+        "minus2": 96.9,
+        "median": 105.56,
+        "plus2": 114.2
+      },
+      {
+        "age": 53,
+        "minus2": 97.4,
+        "median": 106.11,
+        "plus2": 114.9
+      },
+      {
+        "age": 54,
+        "minus2": 97.8,
+        "median": 106.67,
+        "plus2": 115.5
+      },
+      {
+        "age": 55,
+        "minus2": 98.3,
+        "median": 107.22,
+        "plus2": 116.1
+      },
+      {
+        "age": 56,
+        "minus2": 98.8,
+        "median": 107.77,
+        "plus2": 116.7
+      },
+      {
+        "age": 57,
+        "minus2": 99.3,
+        "median": 108.32,
+        "plus2": 117.4
+      },
+      {
+        "age": 58,
+        "minus2": 99.7,
+        "median": 108.87,
+        "plus2": 118
+      },
+      {
+        "age": 59,
+        "minus2": 100.2,
+        "median": 109.42,
+        "plus2": 118.6
+      },
+      {
+        "age": 60,
+        "minus2": 100.7,
+        "median": 109.96,
+        "plus2": 119.2
+      },
+      {
+        "age": 61,
+        "minus2": 101.1,
+        "median": 110.3,
+        "plus2": 119.4
+      },
+      {
+        "age": 72,
+        "minus2": 106.1,
+        "median": 116.0,
+        "plus2": 125.8
+      },
+      {
+        "age": 84,
+        "minus2": 111.2,
+        "median": 121.7,
+        "plus2": 132.3
+      },
+      {
+        "age": 96,
+        "minus2": 116.0,
+        "median": 127.3,
+        "plus2": 138.6
+      },
+      {
+        "age": 108,
+        "minus2": 120.5,
+        "median": 132.6,
+        "plus2": 144.6
+      },
+      {
+        "age": 120,
+        "minus2": 125.0,
+        "median": 137.8,
+        "plus2": 150.5
+      },
+      {
+        "age": 132,
+        "minus2": 129.7,
+        "median": 143.1,
+        "plus2": 156.6
+      },
+      {
+        "age": 144,
+        "minus2": 134.9,
+        "median": 149.1,
+        "plus2": 163.3
+      },
+      {
+        "age": 156,
+        "minus2": 141.2,
+        "median": 156.0,
+        "plus2": 170.9
+      },
+      {
+        "age": 168,
+        "minus2": 147.8,
+        "median": 163.2,
+        "plus2": 178.6
+      },
+      {
+        "age": 180,
+        "minus2": 153.4,
+        "median": 169.0,
+        "plus2": 184.6
+      },
+      {
+        "age": 192,
+        "minus2": 157.4,
+        "median": 172.9,
+        "plus2": 188.4
+      },
+      {
+        "age": 204,
+        "minus2": 159.9,
+        "median": 175.2,
+        "plus2": 190.4
+      },
+      {
+        "age": 216,
+        "minus2": 161.2,
+        "median": 176.1,
+        "plus2": 191.1
+      },
+      {
+        "age": 228,
+        "minus2": 161.9,
+        "median": 176.5,
+        "plus2": 191.1
+      }
+    ],
+    "girls": [
+      {
+        "age": 0,
+        "minus2": 45.42,
+        "median": 49.15,
+        "plus2": 52.87
+      },
+      {
+        "age": 1,
+        "minus2": 49.78,
+        "median": 53.69,
+        "plus2": 57.6
+      },
+      {
+        "age": 2,
+        "minus2": 52.99,
+        "median": 57.07,
+        "plus2": 61.14
+      },
+      {
+        "age": 3,
+        "minus2": 55.59,
+        "median": 59.8,
+        "plus2": 64.01
+      },
+      {
+        "age": 4,
+        "minus2": 57.76,
+        "median": 62.09,
+        "plus2": 66.42
+      },
+      {
+        "age": 5,
+        "minus2": 59.6,
+        "median": 64.03,
+        "plus2": 68.46
+      },
+      {
+        "age": 6,
+        "minus2": 61.2,
+        "median": 65.73,
+        "plus2": 70.26
+      },
+      {
+        "age": 7,
+        "minus2": 62.66,
+        "median": 67.29,
+        "plus2": 71.92
+      },
+      {
+        "age": 8,
+        "minus2": 64.02,
+        "median": 68.75,
+        "plus2": 73.48
+      },
+      {
+        "age": 9,
+        "minus2": 65.31,
+        "median": 70.14,
+        "plus2": 74.97
+      },
+      {
+        "age": 10,
+        "minus2": 66.55,
+        "median": 71.48,
+        "plus2": 76.42
+      },
+      {
+        "age": 11,
+        "minus2": 67.73,
+        "median": 72.77,
+        "plus2": 77.81
+      },
+      {
+        "age": 12,
+        "minus2": 68.87,
+        "median": 74.02,
+        "plus2": 79.16
+      },
+      {
+        "age": 13,
+        "minus2": 69.96,
+        "median": 75.22,
+        "plus2": 80.48
+      },
+      {
+        "age": 14,
+        "minus2": 71.01,
+        "median": 76.38,
+        "plus2": 81.75
+      },
+      {
+        "age": 15,
+        "minus2": 72.03,
+        "median": 77.51,
+        "plus2": 82.99
+      },
+      {
+        "age": 16,
+        "minus2": 73.02,
+        "median": 78.61,
+        "plus2": 84.19
+      },
+      {
+        "age": 17,
+        "minus2": 73.97,
+        "median": 79.67,
+        "plus2": 85.37
+      },
+      {
+        "age": 18,
+        "minus2": 74.9,
+        "median": 80.71,
+        "plus2": 86.52
+      },
+      {
+        "age": 19,
+        "minus2": 75.8,
+        "median": 81.72,
+        "plus2": 87.63
+      },
+      {
+        "age": 20,
+        "minus2": 76.68,
+        "median": 82.7,
+        "plus2": 88.73
+      },
+      {
+        "age": 21,
+        "minus2": 77.53,
+        "median": 83.67,
+        "plus2": 89.8
+      },
+      {
+        "age": 22,
+        "minus2": 78.36,
+        "median": 84.6,
+        "plus2": 90.84
+      },
+      {
+        "age": 23,
+        "minus2": 79.17,
+        "median": 85.52,
+        "plus2": 91.87
+      },
+      {
+        "age": 24,
+        "minus2": 80.8,
+        "median": 85.72,
+        "plus2": 92.2
+      },
+      {
+        "age": 25,
+        "minus2": 80,
+        "median": 86.59,
+        "plus2": 93.1
+      },
+      {
+        "age": 26,
+        "minus2": 80.8,
+        "median": 87.45,
+        "plus2": 94.1
+      },
+      {
+        "age": 27,
+        "minus2": 81.5,
+        "median": 88.28,
+        "plus2": 95
+      },
+      {
+        "age": 28,
+        "minus2": 82.2,
+        "median": 89.1,
+        "plus2": 96
+      },
+      {
+        "age": 29,
+        "minus2": 82.9,
+        "median": 89.9,
+        "plus2": 96.9
+      },
+      {
+        "age": 30,
+        "minus2": 83.6,
+        "median": 90.68,
+        "plus2": 97.7
+      },
+      {
+        "age": 31,
+        "minus2": 84.3,
+        "median": 91.44,
+        "plus2": 98.6
+      },
+      {
+        "age": 32,
+        "minus2": 84.9,
+        "median": 92.19,
+        "plus2": 99.4
+      },
+      {
+        "age": 33,
+        "minus2": 85.6,
+        "median": 92.92,
+        "plus2": 100.3
+      },
+      {
+        "age": 34,
+        "minus2": 86.2,
+        "median": 93.64,
+        "plus2": 101.1
+      },
+      {
+        "age": 35,
+        "minus2": 86.8,
+        "median": 94.35,
+        "plus2": 101.9
+      },
+      {
+        "age": 36,
+        "minus2": 87.4,
+        "median": 95.05,
+        "plus2": 102.7
+      },
+      {
+        "age": 37,
+        "minus2": 88,
+        "median": 95.74,
+        "plus2": 103.4
+      },
+      {
+        "age": 38,
+        "minus2": 88.6,
+        "median": 96.42,
+        "plus2": 104.2
+      },
+      {
+        "age": 39,
+        "minus2": 89.2,
+        "median": 97.09,
+        "plus2": 105
+      },
+      {
+        "age": 40,
+        "minus2": 89.8,
+        "median": 97.75,
+        "plus2": 105.7
+      },
+      {
+        "age": 41,
+        "minus2": 90.4,
+        "median": 98.4,
+        "plus2": 106.4
+      },
+      {
+        "age": 42,
+        "minus2": 90.9,
+        "median": 99.04,
+        "plus2": 107.2
+      },
+      {
+        "age": 43,
+        "minus2": 91.5,
+        "median": 99.68,
+        "plus2": 107.9
+      },
+      {
+        "age": 44,
+        "minus2": 92,
+        "median": 100.31,
+        "plus2": 108.6
+      },
+      {
+        "age": 45,
+        "minus2": 92.5,
+        "median": 100.92,
+        "plus2": 109.3
+      },
+      {
+        "age": 46,
+        "minus2": 93.1,
+        "median": 101.53,
+        "plus2": 110
+      },
+      {
+        "age": 47,
+        "minus2": 93.6,
+        "median": 102.14,
+        "plus2": 110.7
+      },
+      {
+        "age": 48,
+        "minus2": 94.1,
+        "median": 102.73,
+        "plus2": 111.3
+      },
+      {
+        "age": 49,
+        "minus2": 94.6,
+        "median": 103.32,
+        "plus2": 112
+      },
+      {
+        "age": 50,
+        "minus2": 95.1,
+        "median": 103.9,
+        "plus2": 112.7
+      },
+      {
+        "age": 51,
+        "minus2": 95.6,
+        "median": 104.48,
+        "plus2": 113.3
+      },
+      {
+        "age": 52,
+        "minus2": 96.1,
+        "median": 105.05,
+        "plus2": 114
+      },
+      {
+        "age": 53,
+        "minus2": 96.6,
+        "median": 105.61,
+        "plus2": 114.6
+      },
+      {
+        "age": 54,
+        "minus2": 97.1,
+        "median": 106.17,
+        "plus2": 115.2
+      },
+      {
+        "age": 55,
+        "minus2": 97.6,
+        "median": 106.73,
+        "plus2": 115.9
+      },
+      {
+        "age": 56,
+        "minus2": 98.1,
+        "median": 107.28,
+        "plus2": 116.5
+      },
+      {
+        "age": 57,
+        "minus2": 98.5,
+        "median": 107.82,
+        "plus2": 117.1
+      },
+      {
+        "age": 58,
+        "minus2": 99,
+        "median": 108.36,
+        "plus2": 117.7
+      },
+      {
+        "age": 59,
+        "minus2": 99.5,
+        "median": 108.89,
+        "plus2": 118.3
+      },
+      {
+        "age": 60,
+        "minus2": 99.9,
+        "median": 109.42,
+        "plus2": 118.9
+      },
+      {
+        "age": 61,
+        "minus2": 100.1,
+        "median": 109.6,
+        "plus2": 119.1
+      },
+      {
+        "age": 72,
+        "minus2": 104.9,
+        "median": 115.1,
+        "plus2": 125.4
+      },
+      {
+        "age": 84,
+        "minus2": 109.9,
+        "median": 120.8,
+        "plus2": 131.7
+      },
+      {
+        "age": 96,
+        "minus2": 115.0,
+        "median": 126.6,
+        "plus2": 138.2
+      },
+      {
+        "age": 108,
+        "minus2": 120.3,
+        "median": 132.5,
+        "plus2": 144.7
+      },
+      {
+        "age": 120,
+        "minus2": 125.8,
+        "median": 138.6,
+        "plus2": 151.4
+      },
+      {
+        "age": 132,
+        "minus2": 131.7,
+        "median": 145.0,
+        "plus2": 158.3
+      },
+      {
+        "age": 144,
+        "minus2": 137.6,
+        "median": 151.2,
+        "plus2": 164.9
+      },
+      {
+        "age": 156,
+        "minus2": 142.5,
+        "median": 156.4,
+        "plus2": 170.3
+      },
+      {
+        "age": 168,
+        "minus2": 145.9,
+        "median": 159.8,
+        "plus2": 173.7
+      },
+      {
+        "age": 180,
+        "minus2": 147.9,
+        "median": 161.7,
+        "plus2": 175.4
+      },
+      {
+        "age": 192,
+        "minus2": 148.9,
+        "median": 162.5,
+        "plus2": 176.1
+      },
+      {
+        "age": 204,
+        "minus2": 149.5,
+        "median": 162.9,
+        "plus2": 176.2
+      },
+      {
+        "age": 216,
+        "minus2": 149.8,
+        "median": 163.1,
+        "plus2": 176.3
+      },
+      {
+        "age": 228,
+        "minus2": 149.9,
+        "median": 163.2,
+        "plus2": 176.3
+      }
+    ]
+  },
+  "weight": {
+    "boys": [
+      {
+        "age": 0,
+        "minus2": 2.5,
+        "median": 3.3,
+        "plus2": 4.4
+      },
+      {
+        "age": 1,
+        "minus2": 3.4,
+        "median": 4.5,
+        "plus2": 5.8
+      },
+      {
+        "age": 2,
+        "minus2": 4.3,
+        "median": 5.6,
+        "plus2": 7.1
+      },
+      {
+        "age": 3,
+        "minus2": 5,
+        "median": 6.4,
+        "plus2": 8
+      },
+      {
+        "age": 4,
+        "minus2": 5.6,
+        "median": 7,
+        "plus2": 8.7
+      },
+      {
+        "age": 5,
+        "minus2": 6,
+        "median": 7.5,
+        "plus2": 9.3
+      },
+      {
+        "age": 6,
+        "minus2": 6.4,
+        "median": 7.9,
+        "plus2": 9.8
+      },
+      {
+        "age": 7,
+        "minus2": 6.7,
+        "median": 8.3,
+        "plus2": 10.3
+      },
+      {
+        "age": 8,
+        "minus2": 6.9,
+        "median": 8.6,
+        "plus2": 10.7
+      },
+      {
+        "age": 9,
+        "minus2": 7.1,
+        "median": 8.9,
+        "plus2": 11
+      },
+      {
+        "age": 10,
+        "minus2": 7.4,
+        "median": 9.2,
+        "plus2": 11.4
+      },
+      {
+        "age": 11,
+        "minus2": 7.6,
+        "median": 9.4,
+        "plus2": 11.7
+      },
+      {
+        "age": 12,
+        "minus2": 7.7,
+        "median": 9.6,
+        "plus2": 12
+      },
+      {
+        "age": 13,
+        "minus2": 7.9,
+        "median": 9.9,
+        "plus2": 12.3
+      },
+      {
+        "age": 14,
+        "minus2": 8.1,
+        "median": 10.1,
+        "plus2": 12.6
+      },
+      {
+        "age": 15,
+        "minus2": 8.3,
+        "median": 10.3,
+        "plus2": 12.8
+      },
+      {
+        "age": 16,
+        "minus2": 8.4,
+        "median": 10.5,
+        "plus2": 13.1
+      },
+      {
+        "age": 17,
+        "minus2": 8.6,
+        "median": 10.7,
+        "plus2": 13.4
+      },
+      {
+        "age": 18,
+        "minus2": 8.8,
+        "median": 10.9,
+        "plus2": 13.7
+      },
+      {
+        "age": 19,
+        "minus2": 8.9,
+        "median": 11.1,
+        "plus2": 13.9
+      },
+      {
+        "age": 20,
+        "minus2": 9.1,
+        "median": 11.3,
+        "plus2": 14.2
+      },
+      {
+        "age": 21,
+        "minus2": 9.2,
+        "median": 11.5,
+        "plus2": 14.5
+      },
+      {
+        "age": 22,
+        "minus2": 9.4,
+        "median": 11.8,
+        "plus2": 14.7
+      },
+      {
+        "age": 23,
+        "minus2": 9.5,
+        "median": 12,
+        "plus2": 15
+      },
+      {
+        "age": 24,
+        "minus2": 9.7,
+        "median": 12.2,
+        "plus2": 15.3
+      },
+      {
+        "age": 25,
+        "minus2": 9.8,
+        "median": 12.4,
+        "plus2": 15.5
+      },
+      {
+        "age": 26,
+        "minus2": 10,
+        "median": 12.5,
+        "plus2": 15.8
+      },
+      {
+        "age": 27,
+        "minus2": 10.1,
+        "median": 12.7,
+        "plus2": 16.1
+      },
+      {
+        "age": 28,
+        "minus2": 10.2,
+        "median": 12.9,
+        "plus2": 16.3
+      },
+      {
+        "age": 29,
+        "minus2": 10.4,
+        "median": 13.1,
+        "plus2": 16.6
+      },
+      {
+        "age": 30,
+        "minus2": 10.5,
+        "median": 13.3,
+        "plus2": 16.9
+      },
+      {
+        "age": 31,
+        "minus2": 10.7,
+        "median": 13.5,
+        "plus2": 17.1
+      },
+      {
+        "age": 32,
+        "minus2": 10.8,
+        "median": 13.7,
+        "plus2": 17.4
+      },
+      {
+        "age": 33,
+        "minus2": 10.9,
+        "median": 13.8,
+        "plus2": 17.6
+      },
+      {
+        "age": 34,
+        "minus2": 11,
+        "median": 14,
+        "plus2": 17.8
+      },
+      {
+        "age": 35,
+        "minus2": 11.2,
+        "median": 14.2,
+        "plus2": 18.1
+      },
+      {
+        "age": 36,
+        "minus2": 11.3,
+        "median": 14.3,
+        "plus2": 18.3
+      },
+      {
+        "age": 37,
+        "minus2": 11.4,
+        "median": 14.5,
+        "plus2": 18.6
+      },
+      {
+        "age": 38,
+        "minus2": 11.5,
+        "median": 14.7,
+        "plus2": 18.8
+      },
+      {
+        "age": 39,
+        "minus2": 11.6,
+        "median": 14.8,
+        "plus2": 19
+      },
+      {
+        "age": 40,
+        "minus2": 11.8,
+        "median": 15,
+        "plus2": 19.3
+      },
+      {
+        "age": 41,
+        "minus2": 11.9,
+        "median": 15.2,
+        "plus2": 19.5
+      },
+      {
+        "age": 42,
+        "minus2": 12,
+        "median": 15.3,
+        "plus2": 19.7
+      },
+      {
+        "age": 43,
+        "minus2": 12.1,
+        "median": 15.5,
+        "plus2": 20
+      },
+      {
+        "age": 44,
+        "minus2": 12.2,
+        "median": 15.7,
+        "plus2": 20.2
+      },
+      {
+        "age": 45,
+        "minus2": 12.4,
+        "median": 15.8,
+        "plus2": 20.5
+      },
+      {
+        "age": 46,
+        "minus2": 12.5,
+        "median": 16,
+        "plus2": 20.7
+      },
+      {
+        "age": 47,
+        "minus2": 12.6,
+        "median": 16.2,
+        "plus2": 20.9
+      },
+      {
+        "age": 48,
+        "minus2": 12.7,
+        "median": 16.3,
+        "plus2": 21.2
+      },
+      {
+        "age": 49,
+        "minus2": 12.8,
+        "median": 16.5,
+        "plus2": 21.4
+      },
+      {
+        "age": 50,
+        "minus2": 12.9,
+        "median": 16.7,
+        "plus2": 21.7
+      },
+      {
+        "age": 51,
+        "minus2": 13.1,
+        "median": 16.8,
+        "plus2": 21.9
+      },
+      {
+        "age": 52,
+        "minus2": 13.2,
+        "median": 17,
+        "plus2": 22.2
+      },
+      {
+        "age": 53,
+        "minus2": 13.3,
+        "median": 17.2,
+        "plus2": 22.4
+      },
+      {
+        "age": 54,
+        "minus2": 13.4,
+        "median": 17.3,
+        "plus2": 22.7
+      },
+      {
+        "age": 55,
+        "minus2": 13.5,
+        "median": 17.5,
+        "plus2": 22.9
+      },
+      {
+        "age": 56,
+        "minus2": 13.6,
+        "median": 17.7,
+        "plus2": 23.2
+      },
+      {
+        "age": 57,
+        "minus2": 13.7,
+        "median": 17.8,
+        "plus2": 23.4
+      },
+      {
+        "age": 58,
+        "minus2": 13.8,
+        "median": 18,
+        "plus2": 23.7
+      },
+      {
+        "age": 59,
+        "minus2": 14,
+        "median": 18.2,
+        "plus2": 23.9
+      },
+      {
+        "age": 60,
+        "minus2": 14.1,
+        "median": 18.3,
+        "plus2": 24.2
+      },
+      {
+        "age": 61,
+        "minus2": 14.4,
+        "median": 18.5,
+        "plus2": 24.2
+      },
+      {
+        "age": 72,
+        "minus2": 15.9,
+        "median": 20.5,
+        "plus2": 27.1
+      },
+      {
+        "age": 84,
+        "minus2": 17.7,
+        "median": 22.9,
+        "plus2": 30.7
+      },
+      {
+        "age": 96,
+        "minus2": 19.5,
+        "median": 25.4,
+        "plus2": 34.7
+      },
+      {
+        "age": 108,
+        "minus2": 21.3,
+        "median": 28.1,
+        "plus2": 39.4
+      },
+      {
+        "age": 120,
+        "minus2": 23.2,
+        "median": 31.2,
+        "plus2": 45.0
+      }
+    ],
+    "girls": [
+      {
+        "age": 0,
+        "minus2": 2.4,
+        "median": 3.2,
+        "plus2": 4.2
+      },
+      {
+        "age": 1,
+        "minus2": 3.2,
+        "median": 4.2,
+        "plus2": 5.5
+      },
+      {
+        "age": 2,
+        "minus2": 3.9,
+        "median": 5.1,
+        "plus2": 6.6
+      },
+      {
+        "age": 3,
+        "minus2": 4.5,
+        "median": 5.8,
+        "plus2": 7.5
+      },
+      {
+        "age": 4,
+        "minus2": 5,
+        "median": 6.4,
+        "plus2": 8.2
+      },
+      {
+        "age": 5,
+        "minus2": 5.4,
+        "median": 6.9,
+        "plus2": 8.8
+      },
+      {
+        "age": 6,
+        "minus2": 5.7,
+        "median": 7.3,
+        "plus2": 9.3
+      },
+      {
+        "age": 7,
+        "minus2": 6,
+        "median": 7.6,
+        "plus2": 9.8
+      },
+      {
+        "age": 8,
+        "minus2": 6.3,
+        "median": 7.9,
+        "plus2": 10.2
+      },
+      {
+        "age": 9,
+        "minus2": 6.5,
+        "median": 8.2,
+        "plus2": 10.5
+      },
+      {
+        "age": 10,
+        "minus2": 6.7,
+        "median": 8.5,
+        "plus2": 10.9
+      },
+      {
+        "age": 11,
+        "minus2": 6.9,
+        "median": 8.7,
+        "plus2": 11.2
+      },
+      {
+        "age": 12,
+        "minus2": 7,
+        "median": 8.9,
+        "plus2": 11.5
+      },
+      {
+        "age": 13,
+        "minus2": 7.2,
+        "median": 9.2,
+        "plus2": 11.8
+      },
+      {
+        "age": 14,
+        "minus2": 7.4,
+        "median": 9.4,
+        "plus2": 12.1
+      },
+      {
+        "age": 15,
+        "minus2": 7.6,
+        "median": 9.6,
+        "plus2": 12.4
+      },
+      {
+        "age": 16,
+        "minus2": 7.7,
+        "median": 9.8,
+        "plus2": 12.6
+      },
+      {
+        "age": 17,
+        "minus2": 7.9,
+        "median": 10,
+        "plus2": 12.9
+      },
+      {
+        "age": 18,
+        "minus2": 8.1,
+        "median": 10.2,
+        "plus2": 13.2
+      },
+      {
+        "age": 19,
+        "minus2": 8.2,
+        "median": 10.4,
+        "plus2": 13.5
+      },
+      {
+        "age": 20,
+        "minus2": 8.4,
+        "median": 10.6,
+        "plus2": 13.7
+      },
+      {
+        "age": 21,
+        "minus2": 8.6,
+        "median": 10.9,
+        "plus2": 14
+      },
+      {
+        "age": 22,
+        "minus2": 8.7,
+        "median": 11.1,
+        "plus2": 14.3
+      },
+      {
+        "age": 23,
+        "minus2": 8.9,
+        "median": 11.3,
+        "plus2": 14.6
+      },
+      {
+        "age": 24,
+        "minus2": 9,
+        "median": 11.5,
+        "plus2": 14.8
+      },
+      {
+        "age": 25,
+        "minus2": 9.2,
+        "median": 11.7,
+        "plus2": 15.1
+      },
+      {
+        "age": 26,
+        "minus2": 9.4,
+        "median": 11.9,
+        "plus2": 15.4
+      },
+      {
+        "age": 27,
+        "minus2": 9.5,
+        "median": 12.1,
+        "plus2": 15.7
+      },
+      {
+        "age": 28,
+        "minus2": 9.7,
+        "median": 12.3,
+        "plus2": 16
+      },
+      {
+        "age": 29,
+        "minus2": 9.8,
+        "median": 12.5,
+        "plus2": 16.2
+      },
+      {
+        "age": 30,
+        "minus2": 10,
+        "median": 12.7,
+        "plus2": 16.5
+      },
+      {
+        "age": 31,
+        "minus2": 10.1,
+        "median": 12.9,
+        "plus2": 16.8
+      },
+      {
+        "age": 32,
+        "minus2": 10.3,
+        "median": 13.1,
+        "plus2": 17.1
+      },
+      {
+        "age": 33,
+        "minus2": 10.4,
+        "median": 13.3,
+        "plus2": 17.3
+      },
+      {
+        "age": 34,
+        "minus2": 10.5,
+        "median": 13.5,
+        "plus2": 17.6
+      },
+      {
+        "age": 35,
+        "minus2": 10.7,
+        "median": 13.7,
+        "plus2": 17.9
+      },
+      {
+        "age": 36,
+        "minus2": 10.8,
+        "median": 13.9,
+        "plus2": 18.1
+      },
+      {
+        "age": 37,
+        "minus2": 10.9,
+        "median": 14,
+        "plus2": 18.4
+      },
+      {
+        "age": 38,
+        "minus2": 11.1,
+        "median": 14.2,
+        "plus2": 18.7
+      },
+      {
+        "age": 39,
+        "minus2": 11.2,
+        "median": 14.4,
+        "plus2": 19
+      },
+      {
+        "age": 40,
+        "minus2": 11.3,
+        "median": 14.6,
+        "plus2": 19.2
+      },
+      {
+        "age": 41,
+        "minus2": 11.5,
+        "median": 14.8,
+        "plus2": 19.5
+      },
+      {
+        "age": 42,
+        "minus2": 11.6,
+        "median": 15,
+        "plus2": 19.8
+      },
+      {
+        "age": 43,
+        "minus2": 11.7,
+        "median": 15.2,
+        "plus2": 20.1
+      },
+      {
+        "age": 44,
+        "minus2": 11.8,
+        "median": 15.3,
+        "plus2": 20.4
+      },
+      {
+        "age": 45,
+        "minus2": 12,
+        "median": 15.5,
+        "plus2": 20.7
+      },
+      {
+        "age": 46,
+        "minus2": 12.1,
+        "median": 15.7,
+        "plus2": 20.9
+      },
+      {
+        "age": 47,
+        "minus2": 12.2,
+        "median": 15.9,
+        "plus2": 21.2
+      },
+      {
+        "age": 48,
+        "minus2": 12.3,
+        "median": 16.1,
+        "plus2": 21.5
+      },
+      {
+        "age": 49,
+        "minus2": 12.4,
+        "median": 16.3,
+        "plus2": 21.8
+      },
+      {
+        "age": 50,
+        "minus2": 12.6,
+        "median": 16.4,
+        "plus2": 22.1
+      },
+      {
+        "age": 51,
+        "minus2": 12.7,
+        "median": 16.6,
+        "plus2": 22.4
+      },
+      {
+        "age": 52,
+        "minus2": 12.8,
+        "median": 16.8,
+        "plus2": 22.6
+      },
+      {
+        "age": 53,
+        "minus2": 12.9,
+        "median": 17,
+        "plus2": 22.9
+      },
+      {
+        "age": 54,
+        "minus2": 13,
+        "median": 17.2,
+        "plus2": 23.2
+      },
+      {
+        "age": 55,
+        "minus2": 13.2,
+        "median": 17.3,
+        "plus2": 23.5
+      },
+      {
+        "age": 56,
+        "minus2": 13.3,
+        "median": 17.5,
+        "plus2": 23.8
+      },
+      {
+        "age": 57,
+        "minus2": 13.4,
+        "median": 17.7,
+        "plus2": 24.1
+      },
+      {
+        "age": 58,
+        "minus2": 13.5,
+        "median": 17.9,
+        "plus2": 24.4
+      },
+      {
+        "age": 59,
+        "minus2": 13.6,
+        "median": 18,
+        "plus2": 24.6
+      },
+      {
+        "age": 60,
+        "minus2": 13.7,
+        "median": 18.2,
+        "plus2": 24.9
+      },
+      {
+        "age": 61,
+        "minus2": 14.0,
+        "median": 18.3,
+        "plus2": 24.8
+      },
+      {
+        "age": 72,
+        "minus2": 15.3,
+        "median": 20.2,
+        "plus2": 27.8
+      },
+      {
+        "age": 84,
+        "minus2": 16.8,
+        "median": 22.4,
+        "plus2": 31.4
+      },
+      {
+        "age": 96,
+        "minus2": 18.6,
+        "median": 25.0,
+        "plus2": 35.8
+      },
+      {
+        "age": 108,
+        "minus2": 20.8,
+        "median": 28.2,
+        "plus2": 41.0
+      },
+      {
+        "age": 120,
+        "minus2": 23.3,
+        "median": 31.9,
+        "plus2": 46.9
+      }
+    ]
+  },
+  "source": "WHO Child Growth Standards 0-60 months + WHO Growth Reference 2007 (5-19 years). 61-228 month height and 61-120 month weight use official WHO 2007 reference anchor points; chart rendering interpolates between anchors. Weight-for-age is intentionally not extended beyond 120 months. See WHO: https://www.who.int/tools/growth-reference-data-for-5to19-years"
+}

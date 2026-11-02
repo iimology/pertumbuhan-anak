@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Daftar Anak - Pertumbuhan Anak{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="h3 mb-1">Daftar Anak</h1>
+        <p class="text-muted mb-0">Kelola biodata dan catatan pertumbuhan.</p>
+    </div>
+    <a href="{{ url_for('tambah_anak') }}" class="btn btn-primary">+ Tambah Anak</a>
+</div>
+
+{% if children %}
+<div class="row g-3">
+    {% for child in children %}
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h2 class="h5">{{ child["name"] }}</h2>
+                <p class="mb-1"><strong>Jenis kelamin:</strong> {{ "Laki-laki" if child["gender"] == "L" else "Perempuan" }}</p>
+                <p class="mb-3"><strong>Lahir:</strong> {{ child["birth_date"] }}</p>
+
+                {% if child["latest_date"] %}
+                    <div class="border-top pt-3">
+                        <small class="text-muted">Pengukuran terakhir</small>
+                        <div>📏 {{ child["latest_height"] }} cm &nbsp; ⚖️ {{ child["latest_weight"] }} kg</div>
+                        <small class="text-muted">{{ child["latest_date"] }}</small>
+                    </div>
+                {% else %}
+                    <p class="text-muted">Belum ada pengukuran.</p>
+                {% endif %}
+            </div>
+
+            <div class="card-footer bg-white border-0">
+                <div class="d-grid gap-2">
+                    <a href="{{ url_for('detail_anak', child_id=child['id']) }}" class="btn btn-outline-primary">
+                        Lihat Detail
+                    </a>
+                    <div class="d-flex gap-2">
+                        <a href="{{ url_for('edit_anak', child_id=child['id']) }}" class="btn btn-warning flex-fill">
+                            Edit
+                        </a>
+                        <form method="post"
+                              action="{{ url_for('hapus_anak', child_id=child['id']) }}"
+                              class="flex-fill"
+                              onsubmit="return confirm('Hapus anak ini beserta SELURUH riwayat pengukurannya? Data yang dihapus tidak dapat dikembalikan.')">
+                            <button class="btn btn-outline-danger w-100">Hapus</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-info">Belum ada data anak. Silakan tambahkan anak pertama.</div>
+{% endif %}
+{% endblock %}

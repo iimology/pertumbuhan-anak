@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Edit Pengukuran{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+<div class="col-lg-7">
+<div class="card shadow-sm">
+<div class="card-body p-4">
+<h1 class="h4">Edit Pengukuran</h1>
+<p class="text-muted">{{ child["name"] }} · Usia akan dihitung ulang otomatis.</p>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Tanggal pengukuran *</label>
+        <input type="date" name="measurement_date" class="form-control"
+               value="{{ request.form.get('measurement_date', measurement['measurement_date']) }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tinggi badan (cm) *</label>
+        <input type="number" name="height" class="form-control" step="0.1" min="0.1"
+               value="{{ request.form.get('height', measurement['height']) }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Berat badan (kg) *</label>
+        <input type="number" name="weight" class="form-control" step="0.01" min="0.01"
+               value="{{ request.form.get('weight', measurement['weight']) }}" required>
+    </div>
+
+    <div class="mb-4">
+        <label class="form-label">Catatan</label>
+        <textarea name="notes" class="form-control" rows="3">{{ request.form.get('notes', measurement['notes'] or '') }}</textarea>
+    </div>
+
+    <a href="{{ url_for('detail_anak', child_id=child['id']) }}" class="btn btn-secondary">Batal</a>
+    <button class="btn btn-primary">Simpan Perubahan</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
