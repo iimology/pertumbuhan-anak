@@ -1,9 +1,42 @@
+import os
+import secrets
 from flask import Flask, render_template, request, redirect, url_for, flash
 from datetime import date
-from database import init_db, get_db
+from database import init_db, get_db, DB_PATH
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "change-this-secret-key"
+
+
+def load_secret_key():
+    """Ambil SECRET_KEY dari environment. Jika kosong, buat sekali lalu simpan
+    di folder data (ikut volume Docker) supaya sama untuk semua worker dan
+    tidak berubah saat container dibuat ulang."""
+    env_key = os.environ.get("SECRET_KEY", "").strip()
+    if env_key and env_key != "change-this-secret-key":
+        return env_key
+
+    key_path = os.path.join(os.path.dirname(DB_PATH), ".secret_key")
+    try:
+        with open(key_path, "r", encoding="utf-8") as f:
+            saved = f.read().strip()
+        if saved:
+            return saved
+    except FileNotFoundError:
+        pass
+
+    os.makedirs(os.path.dirname(key_path), exist_ok=True)
+    new_key = secrets.token_hex(32)
+    try:
+        # "x" = gagal jika file sudah dibuat worker lain di saat bersamaan
+        with open(key_path, "x", encoding="utf-8") as f:
+            f.write(new_key)
+        return new_key
+    except FileExistsError:
+        with open(key_path, "r", encoding="utf-8") as f:
+            return f.read().strip()
+
+
+app.config["SECRET_KEY"] = load_secret_key()
 
 init_db()
 

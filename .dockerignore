@@ -3,7 +3,10 @@
 __pycache__
 *.pyc
 .venv
+.venv*
 venv
 .env
 data/*.db
+data/.secret_key
+*.zip
 README.md

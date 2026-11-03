@@ -42,7 +42,7 @@ python app.py
 
 Buka:
 
-http://locapylhost:5000
+http://localhost:5000
 
 ### Linux/macOS
 
@@ -80,6 +80,26 @@ docker compose down
 ```
 
 Data SQLite disimpan pada Docker volume `growth_data`, sehingga container dapat dibuat ulang tanpa menghapus data.
+
+### Pengaturan server (`.env`)
+
+Buat file `.env` di folder project (tidak ikut Git), misalnya:
+
+```
+APP_PORT=5005
+```
+
+- `APP_PORT`: port di server. Port di dalam container tetap 5000.
+- `SECRET_KEY` (opsional): jika kosong, aplikasi membuat kunci sendiri dan menyimpannya di `data/.secret_key` pada volume.
+
+Jangan gunakan `docker compose down -v`, karena akan menghapus volume database.
+
+### Update di server
+
+```bash
+git pull
+docker compose up -d --build
+```
 
 ## GitHub
 
@@ -119,7 +139,7 @@ Tahap berikutnya dapat menambahkan:
 
 ## Standar WHO
 
-Aplikasi menyimpan referensi WHO secara lokal di `static/data/who_growth_standards.json`.
+Aplikasi menyimpan referensi WHO secara lokal di `static/data/who_growth_standards.json` (satu-satunya salinan).
 Grafik menampilkan -2 SD, median, dan +2 SD berdasarkan jenis kelamin.
 
 Sumber referensi: WHO Child Growth Standards (0-5 years), indikator length/height-for-age

@@ -229,7 +229,7 @@ loadWHO().then(who => {
                 makeChildDataset('{{ child["name"] }}', weights)
             ]
         },
-        options: chartOptions('Berat (kg)', Math.min(maxChildAge, 120), weightRefMax)
+        options: chartOptions('Berat (kg)', maxChildAge, weightRefMax)
     });
 
     if (maxChildAge > 120) {
